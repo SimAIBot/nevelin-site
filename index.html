@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Студия красоты Nevelin</title>
+  <meta name="description" content="Студия красоты Nevelin — услуги для волос/лица/ногтей. Запись онлайн. Телефон, режим работы, адрес." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg"></div>
+  <main class="wrap">
+    <header class="top">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">N</div>
+        <div class="brandText">
+          <div class="name" data-i18n="brand.name">Nevelin</div>
+          <div class="tag" data-i18n="brand.tag">студия красоты</div>
+        </div>
+      </div>
+      <nav class="nav" aria-label="primary">
+        <a data-i18n="nav.services" href="#services">Услуги</a>
+        <a data-i18n="nav.why" href="#why">Почему мы</a>
+        <a data-i18n="nav.reviews" href="#reviews">Отзывы</a>
+        <a data-i18n="nav.contact" href="#contact">Контакты</a>
+      </nav>
+
+      <div class="langToggle" aria-label="language">
+        <button class="langBtn" type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button class="langBtn" type="button" data-lang="ru" aria-pressed="false">RU</button>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="heroLeft">
+        <p class="eyebrow" data-i18n="hero.eyebrow">Nevelin • студия красоты</p>
+        <h1 data-i18n="hero.h1">
+          Студия красоты <span class="accent">Nevelin</span>.
+          <br />
+          Красиво — без лишней суеты.
+        </h1>
+        <p class="lead" data-i18n="hero.lead">
+          Уход, стрижки, окрашивания, ногтевой сервис и брови/ресницы.
+          Запись — по телефону или в мессенджер.
+        </p>
+
+        <div class="heroMiniRow" aria-label="quick info">
+          <div class="ageCard" aria-label="phone">
+            <div class="ageLabel" data-i18n="mini.phone">Телефон</div>
+            <div class="ageValue"><a id="phoneLink" class="plainLink" href="tel:" data-i18n="mini.phone.v">—</a></div>
+          </div>
+
+          <div class="hostCard" aria-label="hours">
+            <div class="hostLabel" data-i18n="mini.hours">Часы</div>
+            <div class="hostRows">
+              <div class="hostRow"><span class="hk" data-i18n="mini.hours.k">Сегодня</span><span id="hoursText" class="hv" data-i18n="mini.hours.v">—</span></div>
+              <div class="hostRow"><span class="hk" data-i18n="mini.addr.k">Адрес</span><span id="addrText" class="hv" data-i18n="mini.addr.v">—</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ctaRow">
+          <a class="btn primary" href="#contact" data-i18n="cta.book">Записаться</a>
+          <a class="btn" href="#services" data-i18n="cta.services">Услуги</a>
+        </div>
+
+        <div class="chips" aria-label="key services">
+          <span class="chip" data-i18n="chips.hair">Волосы</span>
+          <span class="chip" data-i18n="chips.nails">Ногти</span>
+          <span class="chip" data-i18n="chips.brows">Брови/ресницы</span>
+          <span class="chip" data-i18n="chips.makeup">Макияж</span>
+        </div>
+      </div>
+
+      <aside class="heroCard" aria-label="rating">
+        <div class="cardHead">
+          <div class="dot"></div>
+          <div>
+            <div class="cardTitle" data-i18n="rating.title">Рейтинг</div>
+            <div class="cardSub"><span id="ratingText" data-i18n="rating.sub">—</span></div>
+          </div>
+        </div>
+        <div class="cardBody">
+          <div class="metric">
+            <div class="k" data-i18n="rating.k1">На Google Maps</div>
+            <div class="v"><a class="plainLink" id="mapsLink" href="https://www.google.com/maps?cid=16100472305092297161" target="_blank" rel="noopener">Открыть</a></div>
+          </div>
+          <div class="metric">
+            <div class="k" data-i18n="rating.k2">Отзывы</div>
+            <div class="v" id="reviewsCount">—</div>
+          </div>
+          <div class="metric">
+            <div class="k" data-i18n="rating.k3">Коротко</div>
+            <div class="v" data-i18n="rating.k3v">чисто • аккуратно • по записи</div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="services" class="section">
+      <h2 data-i18n="services.h2">Услуги</h2>
+      <div class="grid">
+        <article class="tile">
+          <h3 data-i18n="services.s1.h3">Парикмахерский зал</h3>
+          <p data-i18n="services.s1.p">Стрижки, укладки, окрашивания, уходовые процедуры.</p>
+        </article>
+        <article class="tile">
+          <h3 data-i18n="services.s2.h3">Ногтевой сервис</h3>
+          <p data-i18n="services.s2.p">Маникюр/педикюр, покрытие, дизайн.</p>
+        </article>
+        <article class="tile">
+          <h3 data-i18n="services.s3.h3">Брови и ресницы</h3>
+          <p data-i18n="services.s3.p">Коррекция/окрашивание, ламинирование.</p>
+        </article>
+        <article class="tile">
+          <h3 data-i18n="services.s4.h3">Макияж</h3>
+          <p data-i18n="services.s4.p">Дневной/вечерний, по записи.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="why" class="section">
+      <h2 data-i18n="why.h2">Почему Nevelin</h2>
+      <div class="list">
+        <div class="row"><span class="num">01</span><span data-i18n="why.p1">Работаем по записи — без ожиданий.</span></div>
+        <div class="row"><span class="num">02</span><span data-i18n="why.p2">Чистота и аккуратность на каждом шаге.</span></div>
+        <div class="row"><span class="num">03</span><span data-i18n="why.p3">Подскажем по уходу и подберём образ под тебя.</span></div>
+      </div>
+    </section>
+
+    <section id="reviews" class="section">
+      <h2 data-i18n="reviews.h2">Отзывы</h2>
+      <div class="grid">
+        <article class="tile">
+          <h3 data-i18n="reviews.r1.h3">Клиенты пишут</h3>
+          <p id="reviewSnippet1" data-i18n="reviews.r1.p">—</p>
+          <p class="meta"><a id="mapsLink2" href="https://www.google.com/maps?cid=16100472305092297161" target="_blank" rel="noopener" data-i18n="reviews.link">Все отзывы на Google Maps</a></p>
+        </article>
+        <article class="tile">
+          <h3 data-i18n="reviews.r2.h3">Рейтинг</h3>
+          <p><strong id="ratingText2">—</strong> <span class="mutedSmall" data-i18n="reviews.r2.p">по данным Google Maps</span></p>
+          <p class="meta"><a href="#contact" data-i18n="reviews.cta">Записаться</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2 data-i18n="contact.h2">Contact</h2>
+      <p class="lead" data-i18n="contact.lead">If you want, I’ll turn an idea into a working workflow with schedules, limits, and reporting.</p>
+      <div class="contact">
+        <div class="contactItem">
+          <div class="label" data-i18n="contact.social.label">Контакты</div>
+          <div class="value">
+            <a id="phoneLink2" href="tel:">Телефон</a>
+            <span class="dotSep">•</span>
+            <a id="mapsLink3" href="https://www.google.com/maps?cid=16100472305092297161" target="_blank" rel="noopener">Google Maps</a>
+          </div>
+        </div>
+        <div class="contactItem">
+          <div class="label" data-i18n="contact.addr.label">Адрес</div>
+          <div class="value" id="addrText2">—</div>
+        </div>
+        <div class="contactItem">
+          <div class="label" data-i18n="contact.hours.label">Режим работы</div>
+          <div class="value" id="hoursText2">—</div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© <span id="y"></span> <span data-i18n="brand.name">Nevelin</span></span>
+      <span class="sep">•</span>
+      <span data-i18n="footer.tagline">С любовью к деталям</span>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    // ====== CONTENT (fill these from Google Maps) ======
+    // I couldn't reliably scrape Google Maps from this environment (no browser runtime),
+    // so keep these values as single source of truth for the page.
+    const BUSINESS = {
+      name: 'Студия красоты Nevelin',
+      phone: '',           // e.g. '+7 XXX XXX-XX-XX'
+      address: '',         // full address
+      hoursToday: '',      // e.g. '10:00–20:00'
+      rating: '',          // e.g. '4.9'
+      reviewsCount: ''     // e.g. '57'
+    };
+
+    // ====== i18n ======
+    const dict = {
+      ru: {
+        'brand.name': 'Nevelin',
+        'brand.tag': 'студия красоты',
+        'nav.services': 'Услуги',
+        'nav.why': 'Почему мы',
+        'nav.reviews': 'Отзывы',
+        'nav.contact': 'Контакты',
+        'hero.eyebrow': 'Nevelin • студия красоты',
+        'hero.h1': 'Студия красоты <span class="accent">Nevelin</span>.<br/>Красиво — без лишней суеты.',
+        'hero.lead': 'Уход, стрижки, окрашивания, ногтевой сервис и брови/ресницы. Запись — по телефону или в мессенджер.',
+        'mini.phone': 'Телефон',
+        'mini.phone.v': '—',
+        'mini.hours': 'Часы',
+        'mini.hours.k': 'Сегодня',
+        'mini.hours.v': '—',
+        'mini.addr.k': 'Адрес',
+        'mini.addr.v': '—',
+        'cta.book': 'Записаться',
+        'cta.services': 'Услуги',
+        'chips.hair': 'Волосы',
+        'chips.nails': 'Ногти',
+        'chips.brows': 'Брови/ресницы',
+        'chips.makeup': 'Макияж',
+        'rating.title': 'Рейтинг',
+        'rating.sub': '—',
+        'rating.k1': 'На Google Maps',
+        'rating.k2': 'Отзывы',
+        'rating.k3': 'Коротко',
+        'rating.k3v': 'чисто • аккуратно • по записи',
+        'services.h2': 'Услуги',
+        'services.s1.h3': 'Парикмахерский зал',
+        'services.s1.p': 'Стрижки, укладки, окрашивания, уходовые процедуры.',
+        'services.s2.h3': 'Ногтевой сервис',
+        'services.s2.p': 'Маникюр/педикюр, покрытие, дизайн.',
+        'services.s3.h3': 'Брови и ресницы',
+        'services.s3.p': 'Коррекция/окрашивание, ламинирование.',
+        'services.s4.h3': 'Макияж',
+        'services.s4.p': 'Дневной/вечерний, по записи.',
+        'why.h2': 'Почему Nevelin',
+        'why.p1': 'Работаем по записи — без ожиданий.',
+        'why.p2': 'Чистота и аккуратность на каждом шаге.',
+        'why.p3': 'Подскажем по уходу и подберём образ под тебя.',
+        'reviews.h2': 'Отзывы',
+        'reviews.r1.h3': 'Клиенты пишут',
+        'reviews.r1.p': '—',
+        'reviews.link': 'Все отзывы на Google Maps',
+        'reviews.r2.h3': 'Рейтинг',
+        'reviews.r2.p': 'по данным Google Maps',
+        'reviews.cta': 'Записаться',
+        'contact.h2': 'Контакты',
+        'contact.lead': 'Запись — по телефону. Можно уточнить свободное время и стоимость.',
+        'contact.social.label': 'Контакты',
+        'contact.addr.label': 'Адрес',
+        'contact.hours.label': 'Режим работы',
+        'footer.tagline': 'С любовью к деталям'
+      },
+      en: {
+        'brand.name': 'Nevelin',
+        'brand.tag': 'beauty studio',
+        'nav.services': 'Services',
+        'nav.why': 'Why us',
+        'nav.reviews': 'Reviews',
+        'nav.contact': 'Contacts',
+        'hero.eyebrow': 'Nevelin • beauty studio',
+        'hero.h1': 'Beauty studio <span class="accent">Nevelin</span>.<br/>Beauty — without the fuss.',
+        'hero.lead': 'Hair, nails, brows/lashes and makeup. Book by phone or messenger.',
+        'mini.phone': 'Phone',
+        'mini.phone.v': '—',
+        'mini.hours': 'Hours',
+        'mini.hours.k': 'Today',
+        'mini.hours.v': '—',
+        'mini.addr.k': 'Address',
+        'mini.addr.v': '—',
+        'cta.book': 'Book',
+        'cta.services': 'Services',
+        'chips.hair': 'Hair',
+        'chips.nails': 'Nails',
+        'chips.brows': 'Brows/Lashes',
+        'chips.makeup': 'Makeup',
+        'rating.title': 'Rating',
+        'rating.sub': '—',
+        'rating.k1': 'On Google Maps',
+        'rating.k2': 'Reviews',
+        'rating.k3': 'In short',
+        'rating.k3v': 'clean • tidy • by appointment',
+        'services.h2': 'Services',
+        'services.s1.h3': 'Hair',
+        'services.s1.p': 'Haircuts, styling, coloring, treatments.',
+        'services.s2.h3': 'Nails',
+        'services.s2.p': 'Manicure/pedicure, gel, design.',
+        'services.s3.h3': 'Brows & lashes',
+        'services.s3.p': 'Shaping/tinting, lamination.',
+        'services.s4.h3': 'Makeup',
+        'services.s4.p': 'Day/evening, by appointment.',
+        'why.h2': 'Why Nevelin',
+        'why.p1': 'By appointment — no waiting.',
+        'why.p2': 'Clean and careful work.',
+        'why.p3': 'We help choose the right look and home care.',
+        'reviews.h2': 'Reviews',
+        'reviews.r1.h3': 'What clients say',
+        'reviews.r1.p': '—',
+        'reviews.link': 'All reviews on Google Maps',
+        'reviews.r2.h3': 'Rating',
+        'reviews.r2.p': 'based on Google Maps',
+        'reviews.cta': 'Book',
+        'contact.h2': 'Contacts',
+        'contact.lead': 'Book by phone. Ask about availability and pricing.',
+        'contact.social.label': 'Contacts',
+        'contact.addr.label': 'Address',
+        'contact.hours.label': 'Working hours',
+        'footer.tagline': 'Made with love for details'
+      }
+    };
+
+    function setLang(lang) {
+      const langDict = dict[lang] || dict.ru;
+      document.documentElement.lang = lang;
+
+      document.querySelectorAll('[data-i18n]').forEach((el) => {
+        const key = el.getAttribute('data-i18n');
+        const val = langDict[key];
+        if (!val) return;
+        if (val.includes('<')) el.innerHTML = val;
+        else el.textContent = val;
+      });
+
+      document.querySelectorAll('.langBtn').forEach((b) => {
+        b.setAttribute('aria-pressed', b.dataset.lang === lang ? 'true' : 'false');
+      });
+
+      localStorage.setItem('lang', lang);
+    }
+
+    // ====== render business data ======
+    function renderBusiness() {
+      const phone = BUSINESS.phone || '';
+      const phoneHref = phone ? `tel:${phone.replace(/\s|\(|\)|-/g, '')}` : 'tel:';
+      const phoneLabel = phone || '—';
+
+      const phoneA = document.getElementById('phoneLink');
+      const phoneA2 = document.getElementById('phoneLink2');
+      if (phoneA) { phoneA.href = phoneHref; phoneA.textContent = phoneLabel; }
+      if (phoneA2) { phoneA2.href = phoneHref; phoneA2.textContent = phoneLabel; }
+
+      const hours = BUSINESS.hoursToday || '—';
+      const h1 = document.getElementById('hoursText');
+      const h2 = document.getElementById('hoursText2');
+      if (h1) h1.textContent = hours;
+      if (h2) h2.textContent = hours;
+
+      const addr = BUSINESS.address || '—';
+      const a1 = document.getElementById('addrText');
+      const a2 = document.getElementById('addrText2');
+      if (a1) a1.textContent = addr;
+      if (a2) a2.textContent = addr;
+
+      const rating = BUSINESS.rating || '—';
+      const ratingSub = rating && BUSINESS.reviewsCount ? `${rating} • ${BUSINESS.reviewsCount} отзывов` : rating;
+      const r1 = document.getElementById('ratingText');
+      const r2 = document.getElementById('ratingText2');
+      if (r1) r1.textContent = ratingSub || '—';
+      if (r2) r2.textContent = rating || '—';
+
+      const rc = document.getElementById('reviewsCount');
+      if (rc) rc.textContent = BUSINESS.reviewsCount ? `${BUSINESS.reviewsCount}` : '—';
+    }
+
+    document.querySelectorAll('.langBtn').forEach((b) => {
+      b.addEventListener('click', () => setLang(b.dataset.lang));
+    });
+
+    const saved = localStorage.getItem('lang');
+    setLang(saved || 'ru');
+    renderBusiness();
+  </script>
+</body>
+</html>
